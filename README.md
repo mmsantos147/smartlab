@@ -6,7 +6,7 @@ Neste repositório estará documentado os passo a passos de instalação e imple
 smartlab/  
 ├── home-assistant/  
 ├── tvbox/  
-└── sensores/  
+└── sensors/  
 
 ****
 
