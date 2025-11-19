@@ -25,6 +25,57 @@
 
 - Para se conectar a tvbox remotamente basta conectar o cabo de rede, identificar o ip dela e conectar via ssh
 
+## Atualização do Armbian 
+1. Atualizar repositórios para Bookworm
+    - Editar o arquivo sources.list   
+        ```Shell
+        sudo nano /etc/apt/sources.list
+        ```
+    - Troque todas as entradas contendo bullseye por bookworm:
+        ```Shell
+        
+        # Original: deb-src http://deb.debian.org/debian bullseye main contrib non-free
+        deb http://deb.debian.org/debian bookworm main contrib non-free
+
+        # Original: deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+        deb http://deb.debian.org/debian bookworm-updates main contrib non-free
+        
+        # Original: deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
+        deb http://deb.debian.org/debian bookworm-backports main contrib non-free
+
+        # Original: deb-src http://security.debian.org/ bullseye-security main contrib non-free
+        deb http://security.debian.org/ bookworm-security main contrib non-free
+        
+        # Original: deb-src https://download.docker.com/linux/debian bullseye stable
+        deb https://download.docker.com/linux/debian bookworm stable
+
+        ```
+    - Editar o arquivo sources.list.d/armbian.list
+        ```Shell
+        sudo nano /etc/apt/sources.list.d/armbian.list
+        ```
+    - Troque as entradas contendo bullseye por bookworm:
+        ```Shell
+        deb http://apt.armbian.com bookworm main bookworm-utils bookworm-desktop
+        ```
+    - Atualizar o sistema:
+        ```Shell
+        sudo apt update
+        ```
+    - Utilizei os seguintes comandos por ser o inicio do sistema, caso atualize um sistema em andamento cuidado ao executar os seguintes comandos:
+        ```Shell
+        sudo apt full-upgrade -y
+        sudo apt --purge autoremove -y
+        sudo apt clean
+        ```
+    - Reinicialize o sistema:
+        ```Shell
+        sudo reboot
+        ```
+    - Teste se a versão esta correta:
+        ```Shell
+        lsb_release -a
+        ```
 
 ***
 ***
@@ -56,3 +107,65 @@
 - The image used in this tutorial is **Armbian 22.08 Bullseye Minimal**, but it is recommended to update to **Bookworm** in the future—so you may install that version directly. All configurations should be performed afterward. This choice was made considering the TV Box’s characteristics, allowing you to optimize the system as desired. For any questions, feel free to get in touch.
 
 - To connect to the TV Box remotely, simply plug in the network cable, identify its IP address, and connect via SSH
+
+## Armbian Update
+
+1. Update repositories to Bookworm
+
+   - Edit the sources.list file
+
+     ```Shell
+     sudo nano /etc/apt/sources.list
+     ```
+   - Replace all entries containing bullseye with bookworm:
+
+     ```Shell
+
+     # Original: deb-src http://deb.debian.org/debian bullseye main contrib non-free
+     deb http://deb.debian.org/debian bookworm main contrib non-free
+
+     # Original: deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+     deb http://deb.debian.org/debian bookworm-updates main contrib non-free
+
+     # Original: deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
+     deb http://deb.debian.org/debian bookworm-backports main contrib non-free
+
+     # Original: deb-src http://security.debian.org/ bullseye-security main contrib non-free
+     deb http://security.debian.org/ bookworm-security main contrib non-free
+
+     # Original: deb-src https://download.docker.com/linux/debian bullseye stable
+     deb https://download.docker.com/linux/debian bookworm stable
+
+     ```
+   - Edit the sources.list.d/armbian.list file
+
+     ```Shell
+     sudo nano /etc/apt/sources.list.d/armbian.list
+     ```
+   - Replace the entries containing bullseye with bookworm:
+
+     ```Shell
+     deb http://apt.armbian.com bookworm main bookworm-utils bookworm-desktop
+     ```
+   - Update the system:
+
+     ```Shell
+     sudo apt update
+     ```
+   - I used the following commands because this was a fresh system. If you are updating an active system, be careful when executing the following commands:
+
+     ```Shell
+     sudo apt full-upgrade -y
+     sudo apt --purge autoremove -y
+     sudo apt clean
+     ```
+   - Reboot the system:
+
+     ```Shell
+     sudo reboot
+     ```
+   - Test if the version is correct:
+
+     ```Shell
+     lsb_release -a
+     ```
