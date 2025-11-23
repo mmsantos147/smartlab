@@ -78,7 +78,6 @@
         ```
 
 ***
-***
 
 # Armbian Installation on MX10 Mini (RK3318 rev. 2.0 Processor)
 ## Warnings

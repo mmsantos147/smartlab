@@ -36,7 +36,6 @@
 6. Agora acesse seu endenreço ip na porta 8123 ex: “http://<seu ip>:8123”
 
 ***
-***
 
 # Home Assistant Installation
 

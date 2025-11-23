@@ -31,7 +31,6 @@ sensor:
     - model (Optional, int): Especificar manualmente o modelo do DHT, pode ser um desses AUTO_DETECT, DHT11, DHT22, DHT22_TYPE2, AM2302, RHT03, SI7021, AM2120. O padrão é AUTO_DETECT. Detecção automática não funciona no seguinte modelo SI7021.
     - update_interval (Opcional, Time): Intervalo entre os monitoramentos. Padrão é 60s.
 ***
-***
 
 # DHT11
 
