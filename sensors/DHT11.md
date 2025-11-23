@@ -4,7 +4,7 @@ Para o uso do DHT11 no sistema, utilizamos as informações contidas no site do 
 
 ## Comunicação
 
-O sensor DHT11 requer um resistor pull-up para os dados. Para isso, conectamos um resistor de $10k\Omega$ entre os dados e o terminal 3.3V do ESP32. O recomendado é utilizar resistor de $4.7k\Omega$, mas resistor de $10k\Omega$ é funcional. 
+O sensor DHT11 requer um resistor pull-up para os dados. Para isso, conectamos um resistor de 10kΩ entre os dados e o terminal 3.3V do ESP32. O recomendado é utilizar resistor de 4.7kΩ, mas resistor de 10kΩ é funcional. 
 
 ## Implementação
 
@@ -39,7 +39,7 @@ For using the DHT11 in the system, we utilized the information contained on the 
 
 ## Comunication
 
-The DHT11 sensor requires a pull-up resistor for data. For this, we connected a $10k\Omega$ resistor between the data and the 3.3V terminal of the ESP32. The recommended resistor is $4.7k\Omega$, but a $10k\Omega$ resistor is functional.
+The DHT11 sensor requires a pull-up resistor for data. For this, we connected a 10kΩ resistor between the data and the 3.3V terminal of the ESP32. The recommended resistor is 4.7kΩ, but a 10kΩ resistor is functional.
 
 ## Implementation
 
