@@ -31,7 +31,7 @@ As informações para a criação e utilização do bot do telegram foram obtida
 - Definir os valores
 - Definir a entidade de notificação e como vai ser enviada a mensagem
 
-<img src="images/automacao-temp-alta.png" alt="Exemplo de Automação" width="700">
+<img src="images/temp_alta_msg.png" alt="Exemplo de Automação" width="700">
 
 ***
 
@@ -68,4 +68,4 @@ The information for creating and using telegram was obtained from the following 
 - Define the values
 - Define the notification entity and how the message will be sent
 
-<img src="images/automacao-temp-alta.png" alt="Exemplo de Automação" width="700">
+<img src="images/temp_alta_msg.png" alt="Exemplo de Automação" width="700">
