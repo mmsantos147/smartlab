@@ -55,7 +55,10 @@ sensor:
       - 1: Exibe uma casa decimal (ex: 45.3%)
       - Padrão: varia conforme o sensor
 
-***
+## Circuito
+
+<img src="images/esquema luz editado.png" alt="Exemplo de Automação" width="500">
+
 ***
 
 # LDR Photoresistor
@@ -115,3 +118,7 @@ sensor:
     - accuracy_decimals (Optional, int): Number of decimal places
       - 1: Displays one decimal place (e.g., 45.3%)
       - Default: varies according to the sensor
+
+## Circuit
+
+<img src="images/esquema luz editado.png" alt="Exemplo de Automação" width="500">

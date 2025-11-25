@@ -30,6 +30,11 @@ sensor:
         - Recebe todas as opções da configuração base dos sensores, consultado no seguinte site: [ESPHome Sensor Component](https://esphome.io/components/sensor/).
     - model (Optional, int): Especificar manualmente o modelo do DHT, pode ser um desses AUTO_DETECT, DHT11, DHT22, DHT22_TYPE2, AM2302, RHT03, SI7021, AM2120. O padrão é AUTO_DETECT. Detecção automática não funciona no seguinte modelo SI7021.
     - update_interval (Opcional, Time): Intervalo entre os monitoramentos. Padrão é 60s.
+
+## Circuito
+
+<img src="images/esquema sensor de umidade.png" alt="Exemplo de Automação" width="500">
+
 ***
 
 # DHT11
@@ -64,3 +69,7 @@ sensor:
         - Accepts all options from the sensor base configuration, found on the following website: [ESPHome Sensor Component](https://esphome.io/components/sensor/).
     - model (Optional, int): Manually specify the DHT model, can be one of these AUTO_DETECT, DHT11, DHT22, DHT22_TYPE2, AM2302, RHT03, SI7021, AM2120. The default is AUTO_DETECT. Auto detection does not work on the SI7021 model.
     - update_interval (Optional, Time): Interval between monitoring. Default is 60s.
+
+## Circuit
+
+<img src="images/esquema sensor de umidade.png" alt="Exemplo de Automação" width="500">

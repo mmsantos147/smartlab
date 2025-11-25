@@ -3,7 +3,6 @@
 Nessa seção, está documentado os processos de instalação do Home Assistant em um dispositivo utilizando ARMBIAN na versão $23.02.2$. Além disso, está documentado as extensões necessárias para as funcionalidades desenvolvidas no sistema. 
 
 ***
-***
 
 # Home assistant
 
